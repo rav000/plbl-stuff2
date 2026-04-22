@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stuff reminder</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="header">
+        <a class="name">TaskFlow (maybe?)</a>
+    </div>
+    <div class="sidebar">
+        <h1>My Lists</h1>
+        <ul id="navList"></ul>
+        <button id="addButton">+ Add List</button>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <div id="listContent">
+            <div class="list-header">
+                <h1 id="listTitle">Lists</h1>
+                <div class="list-stats">
+                    <span id="completedCount">0</span> of <span id="totalCount">0</span> completed
+                </div>
+            </div>
+
+            <div class="list-actions">
+                <button id="addItemButton" class="add-item-btn">
+                    <span class="plus-icon">+</span>
+                    Add Item
+                </button>
+                <button id="sortButton" class="sort-btn">Sort</button>
+            </div>
+
+            <div id="listItems" class="list-items">
+                <!-- List items will be dynamically added here -->
+            </div>
+
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">📝</div>
+                <h3>No items yet</h3>
+                <p>Add your first item to get started!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="stuff.js"></script>
+</body>
+</html>
