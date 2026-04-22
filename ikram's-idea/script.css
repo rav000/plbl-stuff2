@@ -1,0 +1,116 @@
+:root {
+    --primary: #6c5ce7;
+    --bg: #f9f9f9;
+    --text: #2d3436;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.app { display: flex; gap: 20px; width: 100%; max-width: 900px; }
+
+.sidebar {
+    width: 220px;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.container {
+    background: white;
+    flex: 1;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 { text-align: center; color: var(--primary); }
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.folder-input { display:flex; gap:8px; margin-bottom:12px; }
+.folder-input input { flex:1; padding:8px; border:1px solid #e6e6e6; border-radius:8px; }
+.folder-input button { padding:8px 10px; border-radius:8px; background:var(--primary); color:#fff; border:none }
+
+#folder-list { list-style:none; padding:0; margin:0; }
+.folder-item { padding:8px 10px; border-radius:8px; margin-bottom:6px; cursor:pointer; }
+.folder-item.active { background: rgba(108,92,231,0.12); color:var(--primary); font-weight:600 }
+
+.folder-item { display:flex; justify-content:space-between; align-items:center; }
+.folder-item span { flex:1 }
+.folder-delete {
+    background: #ff7675;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.folder-delete:hover { filter:brightness(0.95) }
+
+#current-folder-title { margin-top:0; margin-bottom:12px; color:#555 }
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus { border-color: var(--primary); }
+
+button#add-btn {
+    padding: 12px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul { list-style: none; padding: 0; }
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #b2bec3;
+}
+
+.delete-btn {
+    background: #ff7675;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+span {
+    cursor: pointer;
+    flex: 1;
+}

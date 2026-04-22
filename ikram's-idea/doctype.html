@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple To-Do List</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+<div class="app">
+    <aside class="sidebar">
+        <h3>Folder</h3>
+        <div class="folder-input">
+            <input type="text" id="folder-input" placeholder="Nama folder">
+            <button id="add-folder-btn">Tambah</button>
+        </div>
+        <ul id="folder-list"></ul>
+    </aside>
+
+    <main class="container">
+        <h2>📝 My Tasks</h2>
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="Apa yang ingin dikerjakan?">
+            <button id="add-btn">Tambah</button>
+        </div>
+        <h4 id="current-folder-title">Folder: Umum</h4>
+        <ul id="todo-list"></ul>
+    </main>
+</div>
+
+<script src="link.js"></script>
+
+</body>
+</html>
