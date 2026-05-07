@@ -137,7 +137,6 @@ const storageKey = 'sidebarLists';
 
             const editBtn = document.createElement('button');
             editBtn.className = 'edit-item-btn';
-            // editBtn.textContent = '✏️';
             const editImg = document.createElement('img');
             editImg.src = 'img/pencil.png';
             editImg.alt = 'edit';
