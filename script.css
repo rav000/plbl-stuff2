@@ -140,7 +140,7 @@ body {
     bottom: 20px;
     width: calc(100% - 32px);
     border: none;
-    background-color: #2ecc71;
+    background-color: #dc1414;
     color: white;
     padding: 12px 16px;
     cursor: pointer;
@@ -195,7 +195,7 @@ div.content {
 }
 
 .add-item-btn {
-    background-color: #2ecc71;
+    background-color: #dc1414;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -221,7 +221,7 @@ div.content {
 }
 
 .sort-btn {
-    background-color: #6c757d;
+    background-color: #d5c519;
     color: white;
     border: none;
     padding: 12px 20px;
