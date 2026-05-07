@@ -137,7 +137,11 @@ const storageKey = 'sidebarLists';
 
             const editBtn = document.createElement('button');
             editBtn.className = 'edit-item-btn';
-            editBtn.textContent = '✏️';
+            // editBtn.textContent = '✏️';
+            const editImg = document.createElement('img')
+            editImg.src = 'img/pencil.png'
+            editImg.alt = 'edit'
+            editBtn.appendChild(editImg)
             editBtn.addEventListener('click', () => {
                 const newText = prompt('Edit item:', item.text);
                 if (newText && newText.trim() !== item.text) {
@@ -151,7 +155,7 @@ const storageKey = 'sidebarLists';
             deleteBtn.className = 'delete-item-btn';
             const trashImg = document.createElement('img');
             trashImg.src = 'img/trash.png';
-            trashImg.alt = 'Delete';
+            trashImg.alt = 'delete';
             deleteBtn.appendChild(trashImg);
             deleteBtn.addEventListener('click', () => {
                 if (confirm('Delete this item?')) {
